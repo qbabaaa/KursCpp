@@ -48,3 +48,24 @@ int main() {
 }
 
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int liczba;
+    int suma = 0;
+
+    cout << "podaj liczby  całkowitą";
+    cin >> liczba;
+
+    while (liczba > 0) {
+        suma += liczba % 10;  
+        liczba /= 10;         
+    }
+
+    cout << "suma cyfr" << suma << endl;
+
+    return 0;
+}
+
+
